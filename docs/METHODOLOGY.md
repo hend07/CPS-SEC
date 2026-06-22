@@ -188,7 +188,7 @@ where N = 25 (the number of surveyed models).
 | S4 Design Priority | 18/25 | 44 | 1.76 |
 | **Range** | | | **1.52 to 1.76** |
 
-The range of 1.5 to 1.8 positions reported in the abstract is the conservative rounding of this empirical range.
+The range of 1.44, 1.76 positions reported in the abstract is the conservative rounding of this empirical range.
 
 ### Random-permutation benchmark
 
@@ -198,7 +198,7 @@ For a fully randomized permutation of N = 25 items, the expected absolute rank s
 expected_random_shift ≈ (N+1)/3 = 26/3 ≈ 8.67 positions
 ```
 
-The observed empirical shift of 1.5 to 1.8 positions represents approximately 19% of this random expectation, providing strong evidence that the rankings reflect genuine differences in evaluation evidence rather than weight-dependent artifacts.
+The observed empirical shift of 1.44, 1.76 positions represents approximately 19% of this random expectation, providing strong evidence that the rankings reflect genuine differences in evaluation evidence rather than weight-dependent artifacts.
 
 ---
 

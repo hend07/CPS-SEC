@@ -15,7 +15,7 @@ Reports the average rank shift formula from Section 9.3.2:
 
 where N = 25 (the number of surveyed models).
 
-The expected range of 1.5 to 1.8 positions reported in the abstract is
+The expected range of 1.44, 1.76 positions reported in the abstract is
 verified by running this script.
 
 Random-permutation benchmark:
@@ -183,7 +183,6 @@ def main():
 
     print()
     print(f"AVERAGE RANK SHIFT RANGE: {out['avg_shift_range'][0]:.2f} to {out['avg_shift_range'][1]:.2f} positions")
-    print(f"Rounded for abstract:     1.5 to 1.8 positions")
     print()
     print(f"Random permutation expected shift (N=25): {out['random_permutation_expected']:.2f} positions")
     print(f"Observed / Random ratio:                  {out['ratio_to_random']:.4f}  (~{out['ratio_to_random']*100:.0f}%)")

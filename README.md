@@ -130,7 +130,7 @@ Output:
 #1     PaaS                       Application    0.6837    Advanced
 ```
 
-### Claim: "Average rank shift of only 1.5 to 1.8 positions"
+### Claim: "Average rank shift of only 1.44, 1.76 positions"
 
 ```bash
 python src/sensitivity.py

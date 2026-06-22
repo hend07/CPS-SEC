@@ -90,7 +90,7 @@ print(f'Top score: {r[0][\"maturity\"]:.4f}  ({r[0][\"model_id\"]})')
 
 Expected output: `Top score: 0.6837  (PaaS)`
 
-### Claim: "average rank shift of only 1.5 to 1.8 positions"
+### Claim: "average rank shift of only 1.44, 1.76 positions"
 
 ```bash
 python src/sensitivity.py | grep "AVERAGE RANK SHIFT"

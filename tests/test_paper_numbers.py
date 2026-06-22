@@ -213,7 +213,7 @@ def test_avg_rank_shift_in_range():
     low, high = out["avg_shift_range"]
     assert 1.4 < low < 1.7, f"Low value {low} not in [1.4, 1.7]"
     assert 1.6 < high < 1.9, f"High value {high} not in [1.6, 1.9]"
-    print(f"PASS  Average rank shift range = [{low:.2f}, {high:.2f}]  (~1.5 to 1.8)")
+    print(f"PASS  Average rank shift range = [{low:.2f}, {high:.2f}]")
     for row in out["summary"]:
         print(f"      {row['scenario']:<28} avg_shift = {row['avg_shift']:.4f}")
 

@@ -162,8 +162,15 @@ def compute_all_models(weights_data, models_data, scenario_name="S0_Baseline"):
         })
 
     results.sort(key=lambda r: -r["maturity"])
-    for rank, r in enumerate(results, start=1):
-        r["rank"] = rank
+    
+    # حساب الترتيب مع مراعاة القيم المتطابقة (Ties)
+    for i in range(len(results)):
+        if i > 0 and results[i]["maturity"] == results[i-1]["maturity"]:
+            # إذا كانت القيمة مساوية للنموذج السابق، يأخذ نفس ترتيبه
+            results[i]["rank"] = results[i-1]["rank"]
+        else:
+            # إذا كانت القيمة مختلفة، يأخذ الترتيب بناءً على موقعه في القائمة
+            results[i]["rank"] = i + 1
 
     return results
 
