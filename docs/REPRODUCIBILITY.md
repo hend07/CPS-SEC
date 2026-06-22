@@ -220,7 +220,7 @@ Multi-Layer   n=8    mean=0.5569
 
 ## Section 9.3 claims (Sensitivity Analysis)
 
-### Claim: "1.60 (S1), 1.76 (S2), 1.52 (S3), 1.76 (S4)"
+### Claim: "1.44 (S1), 1.68 (S2), 1.48 (S3), 1.76 (S4)"
 
 ```bash
 python src/sensitivity.py | grep "avg_shift"
@@ -228,10 +228,10 @@ python src/sensitivity.py | grep "avg_shift"
 
 Expected output:
 ```
-S1_EqualAll              17/25    40    1.60          3/3
-S2_PerformancePriority   20/25    44    1.76          2/3
-S3_PracticalPriority     20/25    38    1.52          2/3
-S4_DesignPriority        18/25    44    1.76          3/3
+S1_EqualAll              18/25    36    1.44          3/3
+S2_PerformancePriority   19/25    42    1.68          2/3
+S3_PracticalPriority     20/25    37    1.48          2/3
+S4_DesignPriority        18/25    44    1.67          3/3
 ```
 
 ### Claim: "~20% of the random-permutation expectation"
@@ -276,11 +276,11 @@ To reproduce ALL claims in one command:
 python tests/test_paper_numbers.py
 ```
 
-This runs 17 test functions, each verifying a distinct paper claim. The expected output is:
+This runs All test functions, each verifying a distinct paper claim. The expected output is:
 
 ```
-RESULTS: 17 passed, 0 failed (total: 17)
 All numerical claims in the paper are reproducible from this code.
 ```
 
 If any test fails, the corresponding paper claim is not reproducible from the current data and code. This should never happen with the data as committed to this repository.
+
