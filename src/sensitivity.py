@@ -188,7 +188,7 @@ def main():
     print(f"Observed / Random ratio:                  {out['ratio_to_random']:.4f}  (~{out['ratio_to_random']*100:.0f}%)")
     print()
     print("=" * 70)
-    print("Section 9.3 abstract claim '1.5-1.8 positions' is verified.")
+    print("Section 9.3 abstract claim is verified.")
     print("=" * 70)
 
 
