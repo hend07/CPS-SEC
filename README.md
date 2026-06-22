@@ -86,17 +86,3 @@ If you use this framework or this code, please cite the paper:
   note    = {Under review}
 }
 ```
-
----
-
-## License
-
-The code in this repository is released under the MIT license. See [LICENSE](LICENSE) for details.
-
-The framework methodology is described in the paper and may be freely reused, recalibrated, or extended for any research or industrial purpose.
-
----
-
-## Contact
-
-For questions about the framework, the methodology, or this repository, please open an issue on GitHub or contact the author at the email listed on the paper.
