@@ -9,7 +9,7 @@ Reproducibility repository for the paper:
 > **CPS-SEC: A Maturity-Driven Survey and Quantitative Evaluation Framework for Cyber-Physical Systems Security**
 > Hind A. Al-Ghuraybi, King Abdulaziz University
 
-This repository contains the complete data, computation code, and test suite for every numerical claim in the paper. Running `python tests/test_paper_numbers.py` will verify all 17 paper-level claims in under one second.
+This repository contains the complete data, computation code, and test suite for every numerical claim in the paper. Running `python tests/test_paper_numbers.py`
 
 ---
 
