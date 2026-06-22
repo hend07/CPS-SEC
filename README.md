@@ -175,7 +175,7 @@ If you use this framework or this code, please cite the paper:
   title   = {CPS-SEC: A Maturity-Driven Survey and Quantitative Evaluation Framework
              for Cyber-Physical Systems Security},
   author  = {Al-Ghuraybi, Hind A.},
-  journal = {IEEE Access},
+  journal = {Under review},
   year    = {2026},
   note    = {Under review}
 }
