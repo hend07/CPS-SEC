@@ -1,0 +1,51 @@
+{
+  "_description": "CPS-SEC weights as reported in Table 7 of the paper",
+  "_methodology": "Two-stage normalization: Global_W = Dimension_W * Local_W",
+  "_constraint": "Sum of all global weights = 1.0000 exactly",
+
+  "dimensions": {
+    "Security": {
+      "weight": 0.35,
+      "rationale": "Highest weight reflects consensus across NIST CSF, IEC 62443, ISO/IEC 27001"
+    },
+    "Performance": {
+      "weight": 0.25,
+      "rationale": "Equal to Practical; reflects edge-computing constraints"
+    },
+    "Practical": {
+      "weight": 0.25,
+      "rationale": "Equal to Performance; reflects industrial deployment importance"
+    },
+    "Design": {
+      "weight": 0.15,
+      "rationale": "Lower weight; design quality is supplementary to security efficacy"
+    }
+  },
+
+  "criteria": {
+    "C1":  {"name": "Layer Coverage",                          "dimension": "Security",    "local_weight": 0.25, "global_weight": 0.0875},
+    "C2":  {"name": "Threat Coverage (TC)",                    "dimension": "Security",    "local_weight": 0.30, "global_weight": 0.1050},
+    "C3":  {"name": "Privacy Features",                        "dimension": "Security",    "local_weight": 0.15, "global_weight": 0.0525},
+    "C4":  {"name": "Adaptability and Zero-day Resilience",    "dimension": "Security",    "local_weight": 0.20, "global_weight": 0.0700},
+    "C5":  {"name": "Robustness",                              "dimension": "Security",    "local_weight": 0.10, "global_weight": 0.0350},
+    "C6":  {"name": "Resource Efficiency",                     "dimension": "Performance", "local_weight": 0.30, "global_weight": 0.0750},
+    "C7":  {"name": "Energy Efficiency",                       "dimension": "Performance", "local_weight": 0.15, "global_weight": 0.0375},
+    "C8":  {"name": "Detection Accuracy and Reliability",      "dimension": "Performance", "local_weight": 0.25, "global_weight": 0.0625},
+    "C9":  {"name": "Scalability",                             "dimension": "Performance", "local_weight": 0.15, "global_weight": 0.0375},
+    "C10": {"name": "Response Time",                           "dimension": "Performance", "local_weight": 0.15, "global_weight": 0.0375},
+    "C11": {"name": "Real-world Deployment",                   "dimension": "Practical",   "local_weight": 0.50, "global_weight": 0.1250},
+    "C12": {"name": "Interoperability and Compatibility",      "dimension": "Practical",   "local_weight": 0.30, "global_weight": 0.0750},
+    "C13": {"name": "Standards Compliance",                    "dimension": "Practical",   "local_weight": 0.20, "global_weight": 0.0500},
+    "C14": {"name": "Explainability",                          "dimension": "Design",      "local_weight": 0.40, "global_weight": 0.0600},
+    "C15": {"name": "Data Quality",                            "dimension": "Design",      "local_weight": 0.35, "global_weight": 0.0525},
+    "C16": {"name": "Architectural Simplicity and Modularity", "dimension": "Design",      "local_weight": 0.25, "global_weight": 0.0375}
+  },
+
+  "maturity_tiers": {
+    "Preliminary":  {"min": 0.00, "max": 0.25, "stars": "★"},
+    "Emerging":     {"min": 0.25, "max": 0.45, "stars": "★★"},
+    "Developing":   {"min": 0.45, "max": 0.65, "stars": "★★★"},
+    "Advanced":     {"min": 0.65, "max": 0.85, "stars": "★★★★"},
+    "Mature":       {"min": 0.85, "max": 1.01, "stars": "★★★★★"}
+  }
+}

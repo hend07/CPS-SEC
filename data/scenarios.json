@@ -1,0 +1,92 @@
+{
+  "_description": "Five weighting scenarios for the CPS-SEC sensitivity analysis",
+  "_methodology": "Each scenario defines dimension weights and local weights; global weights are computed as their product",
+  "_constraint": "All scenarios must satisfy sum(global_weights) = 1.0000",
+
+  "scenarios": {
+    "S0_Baseline": {
+      "label": "Baseline (Security Priority)",
+      "description": "The literature-grounded scheme reported in Table 7. Security receives the heaviest allocation (35%).",
+      "dimension_weights": {
+        "Security": 0.35,
+        "Performance": 0.25,
+        "Practical": 0.25,
+        "Design": 0.15
+      },
+      "local_weights": {
+        "C1": 0.25, "C2": 0.30, "C3": 0.15, "C4": 0.20, "C5": 0.10,
+        "C6": 0.30, "C7": 0.15, "C8": 0.25, "C9": 0.15, "C10": 0.15,
+        "C11": 0.50, "C12": 0.30, "C13": 0.20,
+        "C14": 0.40, "C15": 0.35, "C16": 0.25
+      }
+    },
+
+    "S1_EqualAll": {
+      "label": "Equal Weights",
+      "description": "No a-priori prioritization. All dimensions at 25%; all criteria within each dimension share equal local weight.",
+      "dimension_weights": {
+        "Security": 0.25,
+        "Performance": 0.25,
+        "Practical": 0.25,
+        "Design": 0.25
+      },
+      "local_weights": {
+        "C1":  0.20, "C2":  0.20, "C3":  0.20, "C4":  0.20, "C5": 0.20,
+        "C6":  0.20, "C7":  0.20, "C8":  0.20, "C9":  0.20, "C10": 0.20,
+        "C11": 0.3333333333333333, "C12": 0.3333333333333333, "C13": 0.3333333333333333,
+        "C14": 0.3333333333333333, "C15": 0.3333333333333333, "C16": 0.3333333333333333
+      }
+    },
+
+    "S2_PerformancePriority": {
+      "label": "Performance Priority",
+      "description": "Performance receives 35% (e.g., for edge-device deployments where computational overhead is critical).",
+      "dimension_weights": {
+        "Security": 0.25,
+        "Performance": 0.35,
+        "Practical": 0.25,
+        "Design": 0.15
+      },
+      "local_weights": {
+        "C1": 0.25, "C2": 0.30, "C3": 0.15, "C4": 0.20, "C5": 0.10,
+        "C6": 0.30, "C7": 0.15, "C8": 0.25, "C9": 0.15, "C10": 0.15,
+        "C11": 0.50, "C12": 0.30, "C13": 0.20,
+        "C14": 0.40, "C15": 0.35, "C16": 0.25
+      }
+    },
+
+    "S3_PracticalPriority": {
+      "label": "Practical Priority",
+      "description": "Practical receives 35% (e.g., for industrial deployments where real-world deployment and interoperability dominate).",
+      "dimension_weights": {
+        "Security": 0.25,
+        "Performance": 0.25,
+        "Practical": 0.35,
+        "Design": 0.15
+      },
+      "local_weights": {
+        "C1": 0.25, "C2": 0.30, "C3": 0.15, "C4": 0.20, "C5": 0.10,
+        "C6": 0.30, "C7": 0.15, "C8": 0.25, "C9": 0.15, "C10": 0.15,
+        "C11": 0.50, "C12": 0.30, "C13": 0.20,
+        "C14": 0.40, "C15": 0.35, "C16": 0.25
+      }
+    },
+
+    "S4_DesignPriority": {
+      "label": "Design Priority",
+      "description": "Design receives 35% (e.g., for XAI-focused research where explainability dominates).",
+      "dimension_weights": {
+        "Security": 0.25,
+        "Performance": 0.25,
+        "Practical": 0.15,
+        "Design": 0.35
+      },
+      "local_weights": {
+        "C1": 0.25, "C2": 0.30, "C3": 0.15, "C4": 0.20, "C5": 0.10,
+        "C6": 0.30, "C7": 0.15, "C8": 0.25, "C9": 0.15, "C10": 0.15,
+        "C11": 0.50, "C12": 0.30, "C13": 0.20,
+        "C14": 0.40, "C15": 0.35, "C16": 0.25
+      }
+    }
+  }
+}

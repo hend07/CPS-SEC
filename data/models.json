@@ -1,0 +1,162 @@
+{
+  "_description": "Raw ordinal scores (0, 0.5, 1) for 25 CPS security models against 16 CPS-SEC criteria",
+  "_scoring_scale": {
+    "0":   "Criterion not addressed or not reported",
+    "0.5": "Criterion partially addressed",
+    "1":   "Criterion fully addressed with documented evidence"
+  },
+  "_criteria_order": ["C1","C2","C3","C4","C5","C6","C7","C8","C9","C10","C11","C12","C13","C14","C15","C16"],
+
+  "models": [
+    {
+      "id": "TI-PUF",
+      "ref": "[35]",
+      "layer": "Perception",
+      "scores": [0, 0.5, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0.5, 0]
+    },
+    {
+      "id": "IDEA",
+      "ref": "[2]",
+      "layer": "Perception",
+      "scores": [0, 1, 0, 0.5, 0, 1, 0, 0.5, 0, 1, 1, 1, 0, 0.5, 1, 1]
+    },
+    {
+      "id": "CNN-DPR",
+      "ref": "[29]",
+      "layer": "Perception",
+      "scores": [0, 1, 0, 1, 1, 0.5, 0, 0.5, 1, 1, 1, 0.5, 0, 0, 1, 1]
+    },
+    {
+      "id": "ROP Power Match",
+      "ref": "[22]",
+      "layer": "Perception",
+      "scores": [0, 0, 0, 0, 0, 1, 0, 0.5, 0, 0, 1, 0.5, 0, 1, 1, 0.5]
+    },
+    {
+      "id": "Thermal CNN",
+      "ref": "[4]",
+      "layer": "Perception",
+      "scores": [0, 1, 0, 0.5, 0.5, 0, 0, 0.5, 0.5, 0, 1, 0.5, 0, 0, 1, 0.5]
+    },
+    {
+      "id": "MTID",
+      "ref": "[23]",
+      "layer": "Perception",
+      "scores": [0, 0, 0, 0.5, 1, 1, 0, 0.5, 1, 0.5, 1, 1, 0, 0, 1, 1]
+    },
+    {
+      "id": "Wavelet HT-Detector",
+      "ref": "[24]",
+      "layer": "Perception",
+      "scores": [0, 0, 0, 0.5, 0, 0.5, 0, 0.5, 0.5, 0, 1, 0.5, 0, 0, 0.5, 0.5]
+    },
+    {
+      "id": "PUF-Blockchain",
+      "ref": "[27]",
+      "layer": "Network",
+      "scores": [0.5, 1, 0.5, 0, 0, 0, 0, 0, 0, 0, 1, 0.5, 0, 0.5, 0, 0.5]
+    },
+    {
+      "id": "T-CPS Auth",
+      "ref": "[36]",
+      "layer": "Network",
+      "scores": [0.5, 1, 0.5, 0.5, 0, 0.5, 0, 1, 0.5, 0.5, 0.5, 0.5, 0, 1, 0, 0.5]
+    },
+    {
+      "id": "EX-DFL",
+      "ref": "[37]",
+      "layer": "Network",
+      "scores": [0.5, 1, 0.5, 0.5, 0, 0, 0, 0.5, 0.5, 0, 0.5, 0.5, 0, 1, 0.5, 0.5]
+    },
+    {
+      "id": "DeepFed",
+      "ref": "[38]",
+      "layer": "Network",
+      "scores": [0.5, 0.5, 1, 0.5, 0, 0, 0, 0.5, 0.5, 0, 0.5, 0.5, 0, 0, 0.5, 0.5]
+    },
+    {
+      "id": "Blockchain-RL",
+      "ref": "[31]",
+      "layer": "Network",
+      "scores": [0.5, 1, 0.5, 0.5, 0, 0, 0, 0.5, 0, 0, 0.5, 0.5, 0, 1, 0.5, 0.5]
+    },
+    {
+      "id": "GBFKAN",
+      "ref": "[39]",
+      "layer": "Network",
+      "scores": [0.5, 1, 0, 0.5, 1, 1, 0, 0.5, 1, 1, 0.5, 0.5, 0, 1, 0.5, 0.5]
+    },
+    {
+      "id": "PaaS",
+      "ref": "[25]",
+      "layer": "Application",
+      "scores": [0, 1, 1, 0.5, 1, 0, 0, 1, 0.5, 0, 1, 1, 0.5, 1, 1, 1]
+    },
+    {
+      "id": "CP-ADT",
+      "ref": "[32]",
+      "layer": "Application",
+      "scores": [0.5, 1, 0, 0.5, 0, 0, 0, 0, 0.5, 0, 0.5, 0.5, 0.5, 1, 0.5, 0.5]
+    },
+    {
+      "id": "VAE + LSTM",
+      "ref": "[33]",
+      "layer": "Application",
+      "scores": [0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0, 0.5, 0.5, 0, 0, 0, 0.5]
+    },
+    {
+      "id": "SAB-IDSI",
+      "ref": "[34]",
+      "layer": "Application",
+      "scores": [0.5, 0.5, 0.5, 1, 0, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0.5, 0, 0.5]
+    },
+    {
+      "id": "IoTD-2-CS",
+      "ref": "[45]",
+      "layer": "Multi-Layer",
+      "scores": [0.5, 1, 0.5, 0, 1, 0.5, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0]
+    },
+    {
+      "id": "HPCchain",
+      "ref": "[28]",
+      "layer": "Multi-Layer",
+      "scores": [1, 1, 0.5, 0, 1, 0, 0, 0.5, 1, 0.5, 1, 0.5, 0, 1, 1, 1]
+    },
+    {
+      "id": "PUFchain 3.0",
+      "ref": "[44]",
+      "layer": "Multi-Layer",
+      "scores": [1, 1, 0.5, 0, 1, 0, 1, 0.5, 1, 0, 1, 0.5, 0, 1, 0.5, 1]
+    },
+    {
+      "id": "PUF + ZKP + BC",
+      "ref": "[46]",
+      "layer": "Multi-Layer",
+      "scores": [1, 1, 1, 0, 0, 0, 0, 0.5, 0, 0, 0.5, 0, 0, 1, 0, 1]
+    },
+    {
+      "id": "EMLBSM",
+      "ref": "[40]",
+      "layer": "Multi-Layer",
+      "scores": [1, 0.5, 0.5, 0, 0, 0, 0, 0.5, 1, 0.5, 0.5, 1, 0, 1, 0, 1]
+    },
+    {
+      "id": "Multi-layered CIA",
+      "ref": "[41]",
+      "layer": "Multi-Layer",
+      "scores": [1, 1, 0.5, 0.5, 0, 0, 0.5, 1, 1, 0.5, 0.5, 0.5, 0, 1, 0, 0.5]
+    },
+    {
+      "id": "AMCB",
+      "ref": "[42]",
+      "layer": "Multi-Layer",
+      "scores": [1, 1, 0.5, 0.5, 0, 0, 0, 0.5, 0, 0.5, 0.5, 0.5, 0, 1, 0.5, 0.5]
+    },
+    {
+      "id": "SCADA DiD",
+      "ref": "[43]",
+      "layer": "Multi-Layer",
+      "scores": [1, 1, 0.5, 0.5, 0.5, 0, 0, 0.5, 0.5, 0, 1, 1, 0.5, 0, 1, 0.5]
+    }
+  ]
+}

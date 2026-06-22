@@ -1,0 +1,12 @@
+# CPS-SEC Reproducibility Repository
+#
+# This repository uses ONLY the Python 3.8+ standard library.
+# No external dependencies are required.
+#
+# Optional: install pytest if you want to run the tests with pytest
+#           instead of as a standalone script:
+#
+#     pip install pytest
+#
+# Then:
+#     python -m pytest tests/ -v
